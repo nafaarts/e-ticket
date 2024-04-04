@@ -1,15 +1,13 @@
-import { PopularEvent } from "@/lib/definitions"
+import { PopularEvent as PopularEventType } from "@/lib/definitions"
 import Image from "next/image"
 import { AspectRatio } from "./ui/aspect-ratio"
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
 
-const popularEvents: PopularEvent[] = [
+const events: PopularEventType[] = [
     {
         title: "Event 1",
         image: "/image/1.jpeg"
@@ -27,7 +25,7 @@ const popularEvents: PopularEvent[] = [
 export function PopularEventCard({
     title,
     image
-}: PopularEvent) {
+}: PopularEventType) {
     return (
         <a href="javascript:void(0)" className="bg-white shadow-lg rounded-lg overflow-hidden">
             <AspectRatio ratio={4 / 2} className="relative">
@@ -49,17 +47,14 @@ export default function PopularEvent() {
     return (
         <section>
             <h3 className="text-sm md:text-lg font-semibold text-gray-800 mb-4">Lagi Rame 🔥</h3>
-            {/* carousel 3 in md viewport and 1 in sm viewport */}
             <Carousel>
                 <CarouselContent>
-                    {popularEvents.map((event, index) => (
+                    {events.map((event, index) => (
                         <CarouselItem key={index.toString()} className="basis-1/2 lg:basis-1/3">
                             <PopularEventCard {...event} />
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                {/* <CarouselPrevious />
-                <CarouselNext /> */}
             </Carousel>
         </section>
     )

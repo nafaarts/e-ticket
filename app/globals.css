@@ -122,7 +122,7 @@
     -webkit-animation: 35s slide infinite linear;
   }
 
-  .logos-slide img {
+  .logos-slide .logo {
     filter: grayscale(100%);
     -webkit-filter: grayscale();
     opacity: 0.5;
@@ -133,7 +133,7 @@
     -o-transition: all 0.3s ease-in-out;
   }
 
-  .logos-slide img:hover {
+  .logos-slide .logo:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
     opacity: 1;

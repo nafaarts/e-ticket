@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { cn } from '@/lib/utils';
 import { BellIcon } from '@heroicons/react/24/outline'
 import { Button } from './button';
+import Image from 'next/image';
 
 const user = {
     name: 'Tom Cook',
@@ -80,7 +81,7 @@ export function ProfileHeaderResponsive() {
         <>
             <div className="flex items-center px-5">
                 <div className="flex-shrink-0">
-                    <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                    <Image className="h-10 w-10 rounded-full" src={user.imageUrl} alt="sample" />
                 </div>
                 <div className="ml-3">
                     <div className="text-base font-medium leading-none text-white">{user.name}</div>
