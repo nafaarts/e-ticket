@@ -1,11 +1,12 @@
 "use client";
 
-import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Navigation, NavigationResponsive } from '@/components/ui/navigation';
-import ApplicationLogo from '@/components/ui/application-logo';
-import SearchHeader from '@/components/ui/search-header';
-import { ProfileHeader, ProfileHeaderResponsive } from './ui/profile-header';
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Navigation, NavigationResponsive } from "@/components/ui/navigation";
+import ApplicationLogo from "@/components/ui/application-logo";
+import SearchHeader from "@/components/ui/search-header";
+import { ProfileHeader, ProfileHeaderResponsive } from "./ui/profile-header";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -15,7 +16,9 @@ export default function Header() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center gap-5 w-full">
-                <ApplicationLogo className="h-12 w-16" />
+                <Link href="/">
+                  <ApplicationLogo className="h-12 w-16" />
+                </Link>
                 <SearchHeader />
                 <Navigation />
               </div>
@@ -43,5 +46,5 @@ export default function Header() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

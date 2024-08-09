@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 11, 64%, 65%;
+    --primary: 215, 100%, 61%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -96,7 +96,7 @@
   .logos:after {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 150px;
     height: 100%;
     content: "";
     z-index: 2;
