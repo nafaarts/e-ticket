@@ -1,9 +1,10 @@
+import { Instagram, Facebook, Twitter } from "lucide-react";
 import ApplicationLogo from "./ui/application-logo";
 import Clients from "./ui/clients";
 
 export default function Footer() {
   return (
-    <footer className="bg-white mt-6 py-10">
+    <footer className="bg-white mt-3 py-10">
       <div className="mx-auto max-w-7xl px-6 py-4 ">
         <Clients />
         <hr className="my-10" />
@@ -33,9 +34,11 @@ export default function Footer() {
           </div>
           <div className="w-full lg:w-1/4">
             <h3 className="font-bold text-base md:text-lg">Ikuti kami</h3>
-            <p className="mt-2 text-sm">
-              Jl. Teuku Umar No. 1, Banda Aceh, Indonesia
-            </p>
+            <div className="mt-2 flex gap-4 text-gray-600">
+              <Facebook />
+              <Instagram />
+              <Twitter />
+            </div>
           </div>
         </div>
         <hr className="my-10" />
