@@ -4,7 +4,7 @@ import Clients from "./ui/clients";
 
 export default function Footer() {
   return (
-    <footer className="bg-white mt-3 py-10">
+    <footer className="bg-white mt-2 md:mt-4 py-10">
       <div className="mx-auto max-w-7xl px-6 py-4 ">
         <Clients />
         <hr className="my-10" />

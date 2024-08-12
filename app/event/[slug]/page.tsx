@@ -1,10 +1,10 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import React from "react";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import ShareEvent from "@/components/ui/share-event";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function CTATicket() {
   return (
@@ -16,7 +16,9 @@ function CTATicket() {
         </p>
       </div>
 
-      <Button variant="outline">Beli Sekarang</Button>
+      <Link href="/event/this-is-sample-event/purchase">
+        <Button variant="outline">Beli Sekarang</Button>
+      </Link>
     </div>
   );
 }
@@ -24,8 +26,8 @@ function CTATicket() {
 export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
-      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
-        <div className="space-y-4">
+      <main className="mx-auto max-w-7xl p-2 md:p-4">
+        <div className="space-y-2 md:space-y-4">
           <div className="relative rounded-md overflow-hidden aspect-[19/10] md:aspect-[19/6] ">
             <Image
               className="w-full h-56 object-cover"
@@ -35,11 +37,11 @@ export default function Page({ params }: { params: { slug: string } }) {
             />
           </div>
 
-          <div className="flex flex-col md:flex-row gap-3">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-4">
             <div className="bg-white rounded-md w-full md:w-3/4 p-5">
               <p className="mb-3 font-bold text-primary uppercase">#Comedy</p>
 
-              <h3 className="text-2xl text-gray-800 font-bold mb-5">
+              <h3 className="text-xl md:text-2xl text-gray-800 font-bold mb-5">
                 StandUpIndo: Pride of Kutaraja - Banda Aceh Expo Present 2024
               </h3>
 
@@ -111,7 +113,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             </div>
 
             <div className="w-full md:w-1/4 h-fit">
-              <div className="bg-white rounded-md p-5 mb-3">
+              <div className="bg-white rounded-md p-5 mb-2 md:mb-4">
                 <small className="block text-xs text-gray-500 mb-3">
                   Diselenggarakan oleh
                 </small>
@@ -123,7 +125,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                   </Avatar>
                   <div className="flex flex-col">
                     <h5 className="text-sm font-bold">
-                      StandUP Comedy Banda Aceh
+                      Stand Up Comedy Banda Aceh
                     </h5>
                     <small className="text-xs text-gray-500">
                       79 Followers

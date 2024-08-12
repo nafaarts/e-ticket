@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export function PopularEventCard({ title, image }: PopularEventType) {
   return (
-    <Link
-      href="/event/this-is-sample-popular-event"
-      className="bg-white shadow-lg rounded-lg overflow-hidden"
-    >
-      <AspectRatio ratio={4 / 2} className="relative">
+    <Link href="/event/this-is-sample-popular-event" className="">
+      <AspectRatio
+        ratio={4 / 2}
+        className="relative shadow-lg rounded-lg overflow-hidden"
+      >
         <Image
           className="w-full h-56 object-cover"
           src={image}
