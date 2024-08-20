@@ -16,7 +16,7 @@ function CTATicket() {
         </p>
       </div>
 
-      <Link href="/event/this-is-sample-event/purchase">
+      <Link href="/event/this-is-sample-event/tickets">
         <Button variant="outline">Beli Sekarang</Button>
       </Link>
     </div>
@@ -38,7 +38,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
 
           <div className="flex flex-col md:flex-row gap-2 md:gap-4">
-            <div className="bg-white rounded-md w-full md:w-3/4 p-5">
+            <div className="bg-white rounded-md w-full md:w-3/4 md:p-5 p-3">
               <p className="mb-3 font-bold text-primary uppercase">#Comedy</p>
 
               <h3 className="text-xl md:text-2xl text-gray-800 font-bold mb-5">
@@ -62,7 +62,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 
               <hr className="my-5" />
 
-              <div className="hidden md:block bg-primary p-5 rounded my-5">
+              <div className="hidden md:block bg-primary md:p-5 p-3 rounded my-5">
                 <CTATicket />
               </div>
 

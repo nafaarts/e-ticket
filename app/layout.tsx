@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NextTopLoader from "nextjs-toploader";
 
 import "moment/locale/id";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <NextTopLoader showSpinner={false} />
         <Header />
         {children}
         <Footer />

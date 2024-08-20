@@ -9,8 +9,8 @@ import ThisWeek from "@/components/ThisWeek";
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
-      <div className="space-y-3 md:space-y-8">
+    <main className="mx-auto max-w-7xl p-2 md:p-4">
+      <div className="space-y-4 md:space-y-8">
         <HeroImage />
         <Categories />
         <PopularEvent />
