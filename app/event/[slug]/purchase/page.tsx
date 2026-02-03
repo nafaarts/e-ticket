@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Countdown from "@/components/ui/countdown";
+import { Ticket, User, Wallet2 } from "lucide-react";
 
 export default function Page() {
   return (
@@ -23,7 +24,113 @@ export default function Page() {
 
               <hr className="my-6" />
 
-              <div className="space-y-6 mb-10"></div>
+              <div className="space-y-6 mb-10">
+                <div>
+                  <div className="flex items-center gap-2 text-gray-600 mb-3">
+                    <Ticket size={20} />
+                    <h5 className="font-semibold tracking-tight">
+                      DETAIL TIKET
+                    </h5>
+                  </div>
+
+                  <div className="border p-3 rounded">
+                    <table className="text-sm">
+                      <tr>
+                        <td className="text-gray-600">Nama</td>
+                        <td className="px-3">:</td>
+                        <td>OTS VIP (Day 11 - 30 Agustus)</td>
+                      </tr>
+                      <tr>
+                        <td className="text-gray-600">Harga</td>
+                        <td className="px-3">:</td>
+                        <td>Rp. 380.000</td>
+                      </tr>
+                      <tr>
+                        <td className="text-gray-600">Deskripsi</td>
+                        <td className="px-3">:</td>
+                        <td>Price excludes tax & admin fees</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-2 text-gray-600 mb-3">
+                    <User size={20} />
+                    <h5 className="font-semibold tracking-tight">
+                      DATA PELANGGAN
+                    </h5>
+                  </div>
+                  <div className="border p-3 md:p-5 rounded">
+                    <table className="text-sm">
+                      <tr>
+                        <td className="text-gray-600">Nama</td>
+                        <td className="px-3">:</td>
+                        <td>Budi Budian</td>
+                      </tr>
+                      <tr>
+                        <td className="text-gray-600">Email</td>
+                        <td className="px-3">:</td>
+                        <td>budi@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td className="text-gray-600">No. Handphone</td>
+                        <td className="px-3">:</td>
+                        <td>+639203820328</td>
+                      </tr>
+                      <tr>
+                        <td className="text-gray-600">No. Indentitas</td>
+                        <td className="px-3">:</td>
+                        <td>1227237829292</td>
+                      </tr>
+                      <tr>
+                        <td className="text-gray-600">Tanggal Lahir</td>
+                        <td className="px-3">:</td>
+                        <td>23 Juli 2028</td>
+                      </tr>
+                      <tr>
+                        <td className="text-gray-600">Jenis Kelamin</td>
+                        <td className="px-3">:</td>
+                        <td>Laki-laki</td>
+                      </tr>
+                      <tr>
+                        <td className="text-gray-600">Asal Kota</td>
+                        <td className="px-3">:</td>
+                        <td>Sabang</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-2 text-gray-600 mb-3">
+                    <Wallet2 size={20} />
+                    <h5 className="font-semibold tracking-tight">
+                      METODE PEMBAYARAN
+                    </h5>
+                  </div>
+                  <div className="border p-3 md:p-5 rounded text-gray-600">
+                    <div className="flex items-center gap-4 mb-2">
+                      <div className="border-r pr-4">
+                        <img
+                          src="/payment-merchant/bca.webp"
+                          alt="Logo BCA"
+                          style={{
+                            height: 20,
+                          }}
+                        />
+                      </div>
+                      <p className="text-sm font-semibold">
+                        BCA Virtual Account
+                      </p>
+                    </div>
+
+                    <small>
+                      Pembayaran dapat dilakukan dengan aplikasi BCA Mobile.
+                    </small>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
